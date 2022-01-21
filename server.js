@@ -26,7 +26,7 @@ const upload = multer({
   storage: storage
 })
 
-MongoClient.connect('mongodb+srv://manan:mongodb@blogapp.7sz1z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useUnifiedTopology: true })
+MongoClient.connect('mongodb+srv://manan:<password>@blogapp.7sz1z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
     const db = client.db('blogsapp')
